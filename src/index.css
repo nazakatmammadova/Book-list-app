@@ -16,6 +16,7 @@ body {
   width: 90%;
   max-width: 700px;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 .navbar{
   padding: 10px 20px;
@@ -25,4 +26,59 @@ body {
 }
 .navbar h1{
   margin: 10px 0;
+}
+.book-list{
+  margin: 20px;
+}
+.book-list ul{
+  list-style: none;
+  padding: 0;
+}
+.book-list ul li{
+  background-color: #e77f67;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+.book-list ul li:hover{
+  opacity: 0.7;
+  transition: .3s;
+}
+.book-list .title{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.book-list .author{
+  font-size: 0.9rem;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+form{
+  padding: 20px;
+}
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background-color: #f3a683;
+  color: #000;
+  border: none;
+  outline: none;
+}
+::placeholder{
+  color:#fff;
+}
+input[type="submit"]{
+  margin: 10px auto;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  display: block;
+  cursor: pointer;
+  outline: none;
 }

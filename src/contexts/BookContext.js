@@ -6,14 +6,14 @@ const BookContextProvider=(props)=>{
         {id:1,ad:"Suc ve Ceza",yazici:"Dostoyevski"},
         {id:2,ad:"Satranc",yazici:"Stefan Zweight"}
     ])
-    const addbBook=(ad,yazici)=>{
+    const addBook=(ad,yazici)=>{
         setBooks([...books,{id:uuidv4(),ad:ad,yazici:yazici}])
     }
     const removeBook=(id)=>{
         setBooks(books.filter(book=>book.id!=id))
     }
     return(
-        <BookContext.Provider value={{books,addbBook,removeBook}}>
+        <BookContext.Provider value={{books,addBook,removeBook}}>
             {props.children}
         </BookContext.Provider>
     )
