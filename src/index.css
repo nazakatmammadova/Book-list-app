@@ -68,6 +68,9 @@ input[type="text"]{
   color: #000;
   border: none;
   outline: none;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 17px;
 }
 ::placeholder{
   color:#fff;
@@ -76,9 +79,10 @@ input[type="submit"]{
   margin: 10px auto;
   background-color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 6px 10px;
   display: block;
   cursor: pointer;
   outline: none;
+  font-size: 17px;
 }
